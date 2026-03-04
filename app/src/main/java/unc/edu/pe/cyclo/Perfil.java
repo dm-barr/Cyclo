@@ -8,7 +8,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -34,7 +33,7 @@ public class Perfil extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        // Inicializar ViewModel
+
         viewModel = new ViewModelProvider(this).get(PerfilViewModel.class);
 
         setupObservers();
@@ -68,17 +67,9 @@ public class Perfil extends AppCompatActivity {
         binding.tvEntregas.setText(String.valueOf(usuario.getEntregas()));
         binding.tvCO2.setText(String.format(Locale.getDefault(),
                 "%.1f kg", usuario.getCo2Reducido()));
-
-        // Cargar foto si existe
-        String fotoUrl = usuario.getFotoUrl();
-        if (fotoUrl != null && !fotoUrl.isEmpty()) {
-            Glide.with(this)
-                    .load(fotoUrl)
-                    .placeholder(R.drawable.img_profille)
-                    .error(R.drawable.img_profille)
-                    .into(binding.imgPerfil);
-        }
+        binding.imgPerfil.setImageResource(R.drawable.ic_account);
     }
+
 
     private void setupListeners() {
         binding.btnSettings.setOnClickListener(v -> mostrarMenuConfiguracion());
