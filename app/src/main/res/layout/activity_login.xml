@@ -56,12 +56,14 @@
                 android:layout_marginBottom="32dp">
 
                 <ImageView
-                    android:layout_width="56dp"
-                    android:layout_height="56dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_recycle_arrows"
-                    android:contentDescription="Logo reciclaje" />
+                    android:contentDescription="logo cyclo"
+                    android:src="@drawable/img_logo"
+                    android:scaleType="fitCenter" />
             </FrameLayout>
+
 
             <!-- Título -->
             <TextView
