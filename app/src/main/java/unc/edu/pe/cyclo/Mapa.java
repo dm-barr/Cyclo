@@ -59,7 +59,6 @@ public class Mapa extends AppCompatActivity implements OnMapReadyCallback {
         if (mapFragment != null) {
             mapFragment.getMapAsync(this);
         }
-
         setupBottomNavigation();
         setupControls();
         setupBusqueda();
@@ -76,14 +75,9 @@ public class Mapa extends AppCompatActivity implements OnMapReadyCallback {
     }
 
     private void setupControls() {
-        // FAB QR
-        binding.fabQR.setOnClickListener(v ->
-                startActivity(new Intent(Mapa.this, Escanear.class)));
 
-        // Botón mi ubicación
         binding.btnMyLocation.setOnClickListener(v -> centrarEnMiUbicacion());
 
-        // Botones zoom
         binding.btnZoomIn.setOnClickListener(v -> {
             if (mMap != null) mMap.animateCamera(CameraUpdateFactory.zoomIn());
         });
@@ -92,11 +86,9 @@ public class Mapa extends AppCompatActivity implements OnMapReadyCallback {
             if (mMap != null) mMap.animateCamera(CameraUpdateFactory.zoomOut());
         });
 
-        // Card recomendado → ir a Escanear
         binding.cardRecomendado.setOnClickListener(v ->
                 startActivity(new Intent(Mapa.this, Escanear.class)));
 
-        // Botón cómo llegar → abre Google Maps con el punto más cercano
         binding.btnComoLlegar.setOnClickListener(v -> abrirNavegacion());
     }
 

@@ -124,21 +124,6 @@
                 android:elevation="4dp"
                 app:tint="#2E7D32" />
 
-            <!-- FAB QR -->
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fabQR"
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:layout_gravity="end|bottom"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="280dp"
-                android:src="@drawable/ic_qr_code"
-                app:backgroundTint="#2E7D32"
-                app:tint="#FFFFFF"
-                app:fabSize="normal"
-                app:elevation="6dp"
-                android:contentDescription="Escanear QR" />
-
             <!-- Card de ubicación recomendada -->
             <LinearLayout
                 android:id="@+id/cardRecomendado"
