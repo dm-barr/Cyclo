@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cyclo</string>
+    <string name="cyclo">Cyclo</string>
+    <string name="impacto_real_medible_recompensado">Impacto real. Medible. Recompensado.</string>
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="olvido_contrasena">¿Olvidaste tu contraseña?</string>
+    <string name="nuevo_en_cyclo">¿Nuevo en Cyclo?</string>
+    <string name="unete_al_movimiento">Únete al movimiento</string>
+</resources>

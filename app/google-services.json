@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "168387121351",
+    "project_id": "cyclo-e60a9",
+    "storage_bucket": "cyclo-e60a9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168387121351:android:a9a89439c617668ac56ee2",
+        "android_client_info": {
+          "package_name": "unc.edu.pe.cyclo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjZeJ2VuKDSZQTARuwRTiY8k07kwiHMwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
